@@ -1,0 +1,27 @@
+name: experiment-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Install locked environment
+        run: uv sync --frozen
+      - name: Unit and artifact regression tests
+        run: uv run pytest
+      - name: End-to-end smoke experiment
+        run: >-
+          uv run reframe-experiment
+          --train-seeds 8
+          --test-seeds 8
+          --budgets 500
+          --main-budget 500
+          --bootstrap-samples 200
+          --output-root .ci-output

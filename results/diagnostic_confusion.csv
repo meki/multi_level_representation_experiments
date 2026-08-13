@@ -1,0 +1,9 @@
+,search,add,merge,split,relate,compose,delete,relevel
+search,200,0,0,0,0,0,0,0
+add,0,171,0,29,0,0,0,0
+merge,0,0,200,0,0,0,0,0
+split,0,0,0,195,5,0,0,0
+relate,0,0,0,16,184,0,0,0
+compose,0,0,0,0,0,200,0,0
+delete,0,0,52,0,0,24,124,0
+relevel,0,2,0,0,0,0,0,198

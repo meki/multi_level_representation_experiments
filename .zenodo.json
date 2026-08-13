@@ -1,0 +1,19 @@
+{
+  "creators": [
+    {
+      "name": "Sashida, Satoshi",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "title": "ReFrame Experiments: A Controlled Benchmark of Multilevel Representation Revision",
+  "description": "Executable benchmark, complete raw results, derived summaries, figures, tests, and audit code for a controlled study of trace-guided multilevel representation revision in symbolic planning.",
+  "access_right": "open",
+  "license": "mit",
+  "upload_type": "software",
+  "keywords": [
+    "symbolic planning",
+    "representation revision",
+    "resource-bounded search",
+    "reproducible research"
+  ]
+}

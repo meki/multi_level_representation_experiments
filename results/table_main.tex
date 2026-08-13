@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Held-out results at budget 500. Intervals are sequence-level percentile bootstrap 95\% intervals over 200 paired test seeds. Diagnosis is measured when issued; first-candidate success is conditional on proposing an edit candidate.}
+\label{tab:main-results}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Agent & Success (95\% CI) & Cost S/F & Diagnosis & First cand. \\
+\midrule
+Raw BFS & 0.250 [0.238, 0.262] & 267/208 & -- & -- \\
+Fixed coarse & 0.420 [0.412, 0.428] & 127/123 & -- & -- \\
+Add-only & 0.398 [0.391, 0.405] & 196/464 & 0.920 & 0.115 \\
+State revision & 0.763 [0.758, 0.769] & 193/500 & 0.920 & 0.546 \\
+Random retry & 0.446 [0.424, 0.469] & 287/500 & -- & 0.116 \\
+Trace + random target & 0.846 [0.831, 0.860] & 218/500 & 0.920 & 0.476 \\
+Candidate score-only & 0.779 [0.767, 0.790] & 232/500 & -- & 0.422 \\
+Score round-robin & 0.626 [0.604, 0.647] & 269/500 & -- & 0.149 \\
+Trace-guided & 0.980 [0.973, 0.987] & 198/500 & 0.920 & 0.681 \\
+Generator class & 0.994 [0.991, 0.998] & 196/500 & 1.000 & 0.711 \\
+Oracle edit & 1.000 [1.000, 1.000] & 170/-- & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

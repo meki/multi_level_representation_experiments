@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software artifact, please cite the archived release."
+type: software
+title: "ReFrame Experiments: A Controlled Benchmark of Multilevel Representation Revision"
+abstract: "Executable benchmark, complete results, and audit code for a controlled study of trace-guided multilevel representation revision in symbolic planning."
+authors:
+  - given-names: Satoshi
+    family-names: Sashida
+    affiliation: Independent Researcher
+version: "1.0.0"
+date-released: 2026-08-13
+license: MIT
+repository-code: "https://github.com/meki/multi_level_representation_experiments"
+keywords:
+  - symbolic planning
+  - representation revision
+  - resource-bounded search
+  - reproducible research

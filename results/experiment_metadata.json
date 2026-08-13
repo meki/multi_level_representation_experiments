@@ -1,0 +1,39 @@
+{
+  "study_type": "held-out interactive symbolic benchmark with concrete BFS",
+  "training_seeds": 80,
+  "training_tasks": 640,
+  "training_probe_expansions": 32854,
+  "test_seeds": 200,
+  "test_seed_range": [
+    1000,
+    1199
+  ],
+  "task_families": 8,
+  "tasks_per_budget": 1600,
+  "agents": 11,
+  "budgets": [
+    250,
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "main_budget": 500,
+  "probe_limit": 60,
+  "candidate_trial_limit": "remaining_budget",
+  "candidates_per_edit_class": 4,
+  "diagnostic_feature_count": 15,
+  "diagnostic_uses_candidate_features": false,
+  "held_out_diagnostic_accuracy": 0.92,
+  "bootstrap_samples": 10000,
+  "rows": 88000,
+  "raw_results_sha256": "a5f60b0a0e6ce732ca53998e42732dfea1937de4334d78d7419b6cdc1398521d",
+  "duration_seconds": 102.186,
+  "python": "3.12.8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1"
+  }
+}

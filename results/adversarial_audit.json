@@ -1,0 +1,94 @@
+{
+  "tasks": 1600,
+  "candidate_blindness_guarantee": "trace_features accepts only SearchResult and size_scale; candidate collections, identifiers, classes, operators, and scores are absent from its callable interface",
+  "regression_test": "test_trace_feature_api_excludes_task_and_candidates",
+  "non_search_tasks": 1400,
+  "accepted_candidates_min": 3,
+  "accepted_candidates_mean": 6.436428571428571,
+  "accepted_candidates_max": 12,
+  "accepted_classes_min": 2,
+  "accepted_classes_mean": 4.142857142857143,
+  "accepted_classes_max": 7,
+  "accepted_unique_repairs_min": 3,
+  "accepted_unique_repairs_mean": 4.714285714285714,
+  "accepted_unique_repairs_max": 8,
+  "by_family": {
+    "add": {
+      "accepted_candidates_min": 3,
+      "accepted_candidates_mean": 3.0,
+      "accepted_candidates_max": 3,
+      "accepted_classes_min": 2,
+      "accepted_classes_mean": 2.0,
+      "accepted_classes_max": 2,
+      "accepted_unique_repairs_min": 3,
+      "accepted_unique_repairs_mean": 3.0,
+      "accepted_unique_repairs_max": 3
+    },
+    "compose": {
+      "accepted_candidates_min": 10,
+      "accepted_candidates_mean": 10.0,
+      "accepted_candidates_max": 10,
+      "accepted_classes_min": 7,
+      "accepted_classes_mean": 7.0,
+      "accepted_classes_max": 7,
+      "accepted_unique_repairs_min": 5,
+      "accepted_unique_repairs_mean": 5.0,
+      "accepted_unique_repairs_max": 5
+    },
+    "delete": {
+      "accepted_candidates_min": 11,
+      "accepted_candidates_mean": 11.475,
+      "accepted_candidates_max": 12,
+      "accepted_classes_min": 7,
+      "accepted_classes_mean": 7.0,
+      "accepted_classes_max": 7,
+      "accepted_unique_repairs_min": 8,
+      "accepted_unique_repairs_mean": 8.0,
+      "accepted_unique_repairs_max": 8
+    },
+    "merge": {
+      "accepted_candidates_min": 11,
+      "accepted_candidates_mean": 11.58,
+      "accepted_candidates_max": 12,
+      "accepted_classes_min": 7,
+      "accepted_classes_mean": 7.0,
+      "accepted_classes_max": 7,
+      "accepted_unique_repairs_min": 8,
+      "accepted_unique_repairs_mean": 8.0,
+      "accepted_unique_repairs_max": 8
+    },
+    "relate": {
+      "accepted_candidates_min": 3,
+      "accepted_candidates_mean": 3.0,
+      "accepted_candidates_max": 3,
+      "accepted_classes_min": 2,
+      "accepted_classes_mean": 2.0,
+      "accepted_classes_max": 2,
+      "accepted_unique_repairs_min": 3,
+      "accepted_unique_repairs_mean": 3.0,
+      "accepted_unique_repairs_max": 3
+    },
+    "relevel": {
+      "accepted_candidates_min": 3,
+      "accepted_candidates_mean": 3.0,
+      "accepted_candidates_max": 3,
+      "accepted_classes_min": 2,
+      "accepted_classes_mean": 2.0,
+      "accepted_classes_max": 2,
+      "accepted_unique_repairs_min": 3,
+      "accepted_unique_repairs_mean": 3.0,
+      "accepted_unique_repairs_max": 3
+    },
+    "split": {
+      "accepted_candidates_min": 3,
+      "accepted_candidates_mean": 3.0,
+      "accepted_candidates_max": 3,
+      "accepted_classes_min": 2,
+      "accepted_classes_mean": 2.0,
+      "accepted_classes_max": 2,
+      "accepted_unique_repairs_min": 3,
+      "accepted_unique_repairs_mean": 3.0,
+      "accepted_unique_repairs_max": 3
+    }
+  }
+}

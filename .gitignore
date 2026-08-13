@@ -1,0 +1,12 @@
+.venv/
+pilot/
+pilot_*/
+planner_pilot/
+.smoke/
+.smoke_*/
+.ci-output/
+dist/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+*.pyc

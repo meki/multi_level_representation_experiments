@@ -1,0 +1,50 @@
+[project]
+name = "reframe-experiments"
+version = "1.0.0"
+description = "Interactive symbolic planning benchmark for multilevel representation revision"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Satoshi Sashida" },
+]
+keywords = ["symbolic planning", "representation revision", "reproducibility"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "pandas>=2.2,<3",
+]
+
+[project.urls]
+Repository = "https://github.com/meki/multi_level_representation_experiments"
+Issues = "https://github.com/meki/multi_level_representation_experiments/issues"
+
+[project.scripts]
+reframe-experiment = "reframe_experiment.run:main"
+reframe-sensitivity = "reframe_experiment.sensitivity:main"
+reframe-planner-audit = "reframe_experiment.planner_audit:main"
+reframe-adversarial-audit = "reframe_experiment.adversarial_audit:main"
+reframe-classifier-audit = "reframe_experiment.classifier_audit:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8,<10",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reframe_experiment"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
